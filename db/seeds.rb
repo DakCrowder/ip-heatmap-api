@@ -8,10 +8,6 @@
 
 require 'csv'
 
-# csv_text = File.read(Rails.root.join('db/GeoLite2-City-Blocks-IPv6.csv'))
-# csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-# puts csv
-#
 CSV.foreach('db/GeoLite2-City-Blocks-IPv6.csv', {:headers=>:first_row}) do |row|
   ip_location = IpLocation.new
   ip_location.address = row[0]
