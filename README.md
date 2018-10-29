@@ -12,6 +12,13 @@ The pairs should be provided in an object like the following:
 north_east and south_west should map to the top right and bottom left corners
 of the bounding area
 
+The endpoint returns an array of arrays
+The interior arrays contain lat / long pairs inside the given bounds, as well
+as a calculated relative frequency for use in a heatmap.
+```clickhouse
+[[lat, long, freq]]
+[[40.56, -5.6, 0.1]]
+```
 
 ## Running Locally
 If you were so inclined to run this locally you would need to get ruby 2.5.1

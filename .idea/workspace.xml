@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d208c54-2567-4a08-805c-8d563ab2a7af" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/ip_location.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/ip_location.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/models/ip_location_test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/test/models/ip_location_test.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -68,16 +64,17 @@
           <entry key="Gemfile" value="9" />
           <entry key="config" value="12" />
           <entry key="gitignore" value="11" />
-          <entry key="md" value="649" />
+          <entry key="md" value="880" />
           <entry key="rb" value="2944" />
           <entry key="yml" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="649" />
+          <entry key="Markdown" value="878" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Ruby" value="2953" />
+          <entry key="SQL" value="2" />
           <entry key="YAML" value="42" />
         </counts>
       </usages-collector>
@@ -101,8 +98,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <first_editor relative-caret-position="282">
+                <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -359,12 +356,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540321387724</updated>
-      <workItem from="1540321391889" duration="24598000" />
+      <workItem from="1540321391889" duration="25137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24598000" />
+    <option name="totallyTimeSpent" value="25137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="23" width="1440" height="796" extended-state="0" />
@@ -515,8 +512,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <first_editor relative-caret-position="282">
+            <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
