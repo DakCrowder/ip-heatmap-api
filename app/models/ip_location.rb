@@ -12,9 +12,16 @@ class IpLocation < ApplicationRecord
                      min_latitude, max_latitude, min_longitude, max_longitude).group(:latitude, :longitude).count
 
     if res.length > 0
+      # Get the count of the most ip addresses that share a lat / long pair
       max_count = res.max_by{|k,v| v}
-      max_log_count = Math.log(max_count[1], 100)
-      res.map{|i| [i[0][0], i[0][1], (Math.log(i[1], 100) / max_log_count)]}
+
+      # Take the log base 100 of that highest count
+      log_max_count = Math.log(max_count[1], 100)
+
+      # Calculate the relative frequency for each lat / long pair as it compares to the log_max_count
+      # This should give us some spectrum where the frequencies calculated are between 0 and 1 with 1 being the most
+      # frequent lat / long pair
+      res.map{|i| [i[0][0], i[0][1], (Math.log(i[1], 100) / log_max_count)]}
     else
       []
     end
