@@ -1,24 +1,35 @@
-# README
+# Backend for the ipv6 heatmap
+An api with one endpoint and a few tests
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## The Endpoint
+api/ip_locations
 
-Things you may want to cover:
+Endpoint accepts a square bounding area made up of lat/long pairs
+The pairs should be provided in an object like the following:
+```clickhouse
+{north_east: {lat: 90 , lng: 180}, south_west: {lat: -70, lng: -180}}
+```
+north_east and south_west should map to the top right and bottom left corners
+of the bounding area
 
-* Ruby version
 
-* System dependencies
+## Running Locally
+If you were so inclined to run this locally you would need to get ruby 2.5.1
 
-* Configuration
+Get the server running (port 3000 by default)
+```clickhouse
+rails server
+``` 
 
-* Database creation
+You would also need to seed the DB to get anything from the endpoint :)
+```clickhouse
+rake db:seed
+``` 
 
-* Database initialization
+Running tests
+```clickhouse
+rake test
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
